@@ -7,15 +7,14 @@ export const fetchQuestions = async (count = 10) => {
     }
 
     try {
+        console.log("Fetching from GAS URL:", GAS_URL);
         const response = await fetch(`${GAS_URL}?count=${count}`);
         if (!response.ok) throw new Error('Network response was not ok');
         const data = await response.json();
         return data.questions;
     } catch (error) {
         console.error("Failed to fetch questions:", error);
-        // Fallback or rethrow?
-        // use mock for now if fails
-        return mockQuestions(count);
+        throw error; // Propagate error to UI
     }
 };
 

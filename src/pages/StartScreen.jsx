@@ -26,7 +26,7 @@ const StartScreen = ({ onStart }) => {
             }
             onStart(id, questions);
         } catch (err) {
-            setError('Failed to load questions. Check connection.');
+            setError(`Error: ${err.toString()}`);
             console.error(err);
         } finally {
             setLoading(false);

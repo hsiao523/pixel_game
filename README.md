@@ -21,9 +21,15 @@ npm run dev
 ### 2. 環境變數設定
 請參考 `.env.example` 建立 `.env` 檔案：
 ```bash
-VITE_GOOGLE_APP_SCRIPT_URL=你的GAS_WEB_APP_URL
+```bash
+```bash
+VITE_GOOGLE_APP_SCRIPT_URL=https://script.google.com/macros/s/AKfycbyI3v7VLYxfw1p_3xoZrUjKpMZkWEY0elgRPj7K1nE-LP7CfiI1OsRq--YmaH45nRTz/exec
+```
+```
 VITE_PASS_THRESHOLD=60
-VITE_QUESTION_COUNT=10
+```markdown
+VITE_QUESTION_COUNT=50
+```
 ```
 *完整的 GAS 後端設定請參考 `GAS_README.md`*
 
