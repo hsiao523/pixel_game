@@ -1,0 +1,53 @@
+:root {
+  --font-title: "Press Start 2P", system-ui, cursive;
+  --font-body: "VT323", monospace;
+  
+  --color-bg: #2d2b55;
+  --color-text: #ffffff;
+  --color-primary: #ff0055; /* Hot Pink */
+  --color-secondary: #00e676; /* Bright Green */
+  --color-accent: #2979ff; /* Bright Blue */
+  --color-card-bg: #1e1e3f;
+  
+  --pixel-border: 4px;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: 24px;
+  overflow-x: hidden;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-title);
+  color: var(--color-secondary);
+  text-shadow: 4px 4px 0px #000;
+  margin-bottom: 1.5rem;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-bg); 
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-primary); 
+  border: 2px solid var(--color-bg);
+}
